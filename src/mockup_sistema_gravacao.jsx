@@ -5,7 +5,7 @@ import { Input } from "@/components/ui/input";
 import { Badge } from "@/components/ui/badge";
 import { Switch } from "@/components/ui/switch";
 import { Progress } from "@/components/ui/progress";
-import { CheckCircle, XCircle, AlertTriangle, RotateCcw, Play, ScanLine, Trash2, Server, Cpu, Activity, ChevronRight, ShieldAlert } from "lucide-react";
+import { CheckCircle, XCircle, AlertTriangle, RotateCcw, Play, Scan, Trash2, Server, Cpu, Activity, ChevronRight, ShieldAlert } from "lucide-react";
 import bwipjs from "bwip-js";
 
 const pad3 = (n) => n.toString().padStart(3, "0");
@@ -303,7 +303,7 @@ export default function SistemaMockup() {
               <Switch checked={forcarErro} onCheckedChange={(v)=>setForcarErro(v)} />
             </div>
             <div className="flex items-center gap-2">
-              <ScanLine className="text-rose-600" />
+              <Scan className="text-rose-600" />
               <span>Forçar duplicidade (próxima peça)</span>
               <Switch checked={forcarDuplicidade} onCheckedChange={(v)=>setForcarDuplicidade(v)} />
             </div>
